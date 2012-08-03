@@ -1,0 +1,22 @@
+<form action="/generate" method="post">
+  <label for="date">Date:</label>
+  <input type="text" id="date" name="date" />
+  <div class="control-group">
+    <label class="control-label">Gender</label>
+    <div class="controls">
+      <label for="male" class="checkbox inline">
+    Male
+    <input type="radio" id="male" name="gender" value="male" />
+  </label>
+  <label for="female" class="checkbox inline">
+    Female
+    <input type="radio" id="female" name="gender" value="female" />
+  </label>
+  <label for="random" class="checkbox inline">
+    Random
+    <input type="radio" id="random" name="gender" value="" checked="checked" />
+  </label>
+    </div>
+  </div>
+  <input type="submit" class="btn primary" value="Generate"/>
+</form>

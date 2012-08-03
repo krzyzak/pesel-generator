@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Random Pesel Generator</title>
+    <link href='/style.css' rel='stylesheet' type='text/css' />
+    <link href='/bootstrap.min.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<div id="page">
+  <div id="header">
+    <h1><a href="http://pesel-generator.herokuapp.com">RPG</a></h1>
+    <h3>Random Pesel Generator by Michal Krzyzanowski</h3>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="/" class="selected">Home</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+  
+  <div id="contenu">
+    <%= yield %>
+  </div>
+  <div id="footer">
+    <hr />
+      <p>
+        Code by <a href="http://github.com/krzyzak">krzyzak</a>. Using <a href="#">Rpg</a>, powered by <a href="http://sinatrarb.com">Sinatra.</a>
+        <a href="http://github.com/krzyzak/pesel-generator">Source code available on github.com</a>.
+        <a href="http://www.alexandrejoseph.com/">Designed by Alexandre Joseph</a>
+      </p>
+  </div>
+  </div>
+</body>
+</html>
