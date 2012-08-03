@@ -5,6 +5,11 @@ get "/" do
   erb :index
 end
 
+get "/about" do
+  @active = "about"
+  erb :about
+end
+
 post "/generate" do
   @gender = params[:gender].to_sym if params[:gender]
   begin

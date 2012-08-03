@@ -17,11 +17,11 @@
   </div>
   <div id="menu">
     <ul>
-      <li><a href="/" class="selected">Home</a></li>
-      <li><a href="/about">About</a></li>
+      <li><a href="/" <%= 'class="selected"' if @active != "about" %>>Home</a></li>
+      <li><a href="/about" <%= 'class="selected"' if @active == "about" %>>About</a></li>
     </ul>
   </div>
-  
+
   <div id="contenu">
     <%= yield %>
   </div>
