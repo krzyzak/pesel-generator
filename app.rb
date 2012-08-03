@@ -2,7 +2,6 @@ require "sinatra"
 require "rpg"
 
 get "/" do
-  @foo = "bar"
   erb :index
 end
 
